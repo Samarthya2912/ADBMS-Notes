@@ -38,3 +38,29 @@ An internal representation of the query is then created. usually this is a tree 
 
 # query graph
 a query typically has many possible execution strategies and the process of choosing the best strategy is called query optimization. the query optimizer uses a query graph to represent the query. the query graph is a directed graph. the nodes of the query graph are the relations in the query. the edges of the query graph are the join conditions in the query. the query graph is constructed by the query optimizer. the query optimizer uses the query graph to determine the best query plan.
+
+# heuristic approach
+
+# translating sql query to relational algebra
+<!-- read from book -->
+
+# external sorting
+external sorting refers to sorting algorithms that can sort a large file that does not fit into main memory. 
+the typical strategy is sort and merge strategy which starts by sorting small subfiles called runs and then merge the sorted runs creating a larger sorted run. this process is repeated until only one sorted run is left. the sorted run is then written back to the original file.
+the sort merge algo like other databse algos requires buffer space in main memory where the actual sorting and merging of the runs is performed.
+the file is divided into smaller chunks that fit into main memory. each chunk is sorted individually and then merged together to form a sorted file. the merge process is repeated until only one sorted file is left. the sorted file is then written back to the original file.
+
+# algorithms for external sorting
+
+# algorithms for select and join operations
+<!-- projection, selection dekh lena bhai -->
+- linear search
+- binary search
+- using a primary index (hashing)
+- using a clustering index to retrieve multiple records (happens when relation does not have a primary key)
+- equality comparison
+
+# search methods for complex selections
+<!-- from book -->
+
+# implementation the join operation
