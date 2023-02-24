@@ -64,3 +64,15 @@ the file is divided into smaller chunks that fit into main memory. each chunk is
 <!-- from book -->
 
 # implementation the join operation
+- nested loop join
+- single loop join
+- sort merge join
+- hash join
+
+# using heuristics in query optimization
+
+# notations for query trees and query graphs
+
+# general transformation rules for relational algebra
+
+# using selectivity and cost to optimize queries
